@@ -1,0 +1,67 @@
+# OS
+
+.DS_Store
+Thumbs.db
+
+# Logs
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node / JS
+
+node_modules/
+dist/
+build/
+.cache/
+.next/
+out/
+
+# p5 / general web
+
+*.map
+
+# Python
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+*.db
+.env
+.venv/
+venv/
+
+# C / C++ / Rust / Go build artifacts
+
+*.o
+*.out
+*.exe
+*.dll
+*.so
+*.dylib
+target/
+bin/
+
+# Java
+
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+build/
+
+# IDEs / Editors
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Misc
+
+coverage/
+*.tmp
