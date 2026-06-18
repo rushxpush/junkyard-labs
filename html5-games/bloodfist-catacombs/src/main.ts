@@ -1,24 +1,21 @@
 import Attack from "./actions/attack/AttackType";
+import AttackType from "./actions/attack/AttackType";
 import Concussive from "./actions/attack/Concussive";
 import Slash from "./actions/attack/Slash";
 import Thrust from "./actions/attack/Thrust";
 import Unnarmed from "./actions/attack/Unnarmed";
+import Player from "./Player";
 import "./style.css";
 
 // document.querySelector<HTMLDivElement>("#app")!.innerHTML = /* html */
 
-const player = {
-  attack: new Attack(new Unnarmed()),
-};
-
-const initializePlayer = () => {
-  player;
-};
+const attack = new Attack(new Unnarmed());
+const player = new Player(attack);
 
 const attackButton = document.getElementById("attack-button");
 if (attackButton)
   attackButton.addEventListener("click", () => {
-    logger(player.attack.execute());
+    logger(player.attack.executeAttack());
   });
 
 const setAttackTypeSelector = document.getElementById(

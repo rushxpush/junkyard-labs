@@ -1,5 +1,5 @@
 interface AttackTypeI {
-  execute: () => string;
+  executeAttack: () => string;
 }
 
 class Attack {
@@ -13,9 +13,9 @@ class Attack {
     this.type = type;
   }
 
-  execute(): string {
+  executeAttack(): string {
     if (this.type !== null) {
-      return this.type.execute();
+      return this.type.executeAttack();
     } else {
       return "The warrior cannot attack!";
     }
